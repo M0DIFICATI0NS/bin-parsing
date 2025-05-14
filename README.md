@@ -1,5 +1,5 @@
 # About The Project 
-**BIN Info Parser Script** is designed to automate the process of extracting company information from open-source API: data.egov.kz, based on a list of Business Identification Numbers (BIN) and report it to the Excel file correspondingly. All data saved in the local PostgreSQL Database with its logs.
+**BIN Info Parser Script** is designed to automate the process of extracting company information from open-source API: data.egov.kz, based on a list of Business Identification Numbers (BIN) and retrieve an organization's [name], [registration_date], [legal_address], [activity_type], [director] and [liquidation_status], then report it to the Excel file correspondingly. All data saved in the local PostgreSQL Database with its logs.
 
 # Built With
 * [Python]
