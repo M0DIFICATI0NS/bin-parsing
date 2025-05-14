@@ -127,7 +127,7 @@ def main():
         cur = conn.cursor()
 
         # BIN input Path
-        df_bins = pd.read_excel(r"C:\Users\User\Documents\binparsing\bins.xlsx", dtype={'BIN': str})
+        df_bins = pd.read_excel(r"C:\Users\User\Documents\bin-parsing\bins.xlsx", dtype={'BIN': str})
         for bin in df_bins['BIN']:
             # 12-digit BIN establishment
             bin_str = bin.zfill(12)
@@ -196,7 +196,7 @@ def main():
 
         # BIN output Path
         df_out = pd.read_sql("SELECT * FROM organizations", conn)
-        df_out.to_excel(r"C:\Users\User\Documents\binparsing\organizations_report.xlsx", index=False)
+        df_out.to_excel(r"C:\Users\User\Documents\bin-parsing\organizations_report.xlsx", index=False)
 
     except Exception as e:
         logging.error(f"An error occurred: {e}", exc_info=True)

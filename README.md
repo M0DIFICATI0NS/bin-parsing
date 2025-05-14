@@ -17,12 +17,13 @@ To obtain a local copy of the repository and set it up, please follow these step
 * Execute the following command, replacing URL with the repository’s URL:
   1. Clone the Repository:
      ```
-     git clone **Confidential**
+     git clone https://github.com/M0DIFICATI0NS/bin-parsing.git
      ```
   2. Install dependencies:
      ```
-     dotnet add package System.DirectoryServices --version 8.0.0
-     dotnet add package System.DirectoryServices.AccountManagement --version 8.0.0
+     pip install psycopg2
+     pip install beautifulsoup4
+
      ```
   4. Ensure the local path for both exporting and analyzing:
      
@@ -32,7 +33,7 @@ To obtain a local copy of the repository and set it up, please follow these step
      
   3. Run the Project:
      ```
-     dotnet run
+     python parse_bin_info.py run
      ```
 
 # Overview
