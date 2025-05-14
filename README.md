@@ -37,13 +37,13 @@ To obtain a local copy of the repository and set it up, please follow these step
      pip install pandas
      ```
   3. Ensure the local path for both exporting and analyzing, API Key field and database connection info:
-     ```
+     
      https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L17
      https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L130
      https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L199
      https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L119
      https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L204
-     ```
+
   5. Run the Project:
      ```
      python parse_bin_info.py run
