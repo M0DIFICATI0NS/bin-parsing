@@ -4,6 +4,7 @@
 # Built With
 * [Python]
 * [PostgreSQL]
+* [OpenData from KZ Government](https://data.egov.kz/)
 
 # Getting Started
 To obtain a local copy of the repository and set it up, please follow these steps:
@@ -11,6 +12,14 @@ To obtain a local copy of the repository and set it up, please follow these step
 ### Software Dependencies
 * Install Python 3.13.3
 * Install PostgreSQL
+
+### Generate your own API Key:
+* Open https://data.egov.kz/profile/apikeylist
+  1. Click on generate API Key.
+  2. Agree the conditions and sign it with your digital signature via NCALayer.
+  3. Enter the reason why you're going to use it.
+  4. Click on create an API Key.
+  5. Save.
 
 ### Clone the Repository
 * Open your terminal or command prompt.
@@ -23,12 +32,16 @@ To obtain a local copy of the repository and set it up, please follow these step
      ```
      pip install psycopg2
      pip install beautifulsoup4
-
+     pip install requests
+     pip install pandas
      ```
-  3. Ensure the local path for both exporting and analyzing:
-     
-     https://github.com/M0DIFICATI0NS/bin-parsing/blob/cb6a3024f1abafd69fd57ea92098f602706d7319/parse_bin_info.py#L130
-     https://github.com/M0DIFICATI0NS/bin-parsing/blob/cb6a3024f1abafd69fd57ea92098f602706d7319/parse_bin_info.py#L199
+  3. Ensure the local path for both exporting and analyzing, API Key field and database connection info:
+ 
+     https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L17
+     https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L130
+     https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L199
+     https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L119
+     https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L204
 
   5. Run the Project:
      ```
@@ -36,11 +49,8 @@ To obtain a local copy of the repository and set it up, please follow these step
      ```
 
 # Overview
-MessageLog.csv - user log-ins data retrieved from .\pigetmsg command-line utility with 100k+ records;
-InactiveUsers.csv - script's report based on **MessageLog.csv**
-
-<img width="100" alt="image" src="https://github.com/user-attachments/assets/75fb2a7b-0d4f-4638-a332-0bafa0a2f632">
-
+bins.xlsx - organization's business idendification numbers entered by **you**;
+organizations_report.xlsx - script's report based on **bins.xlsx**
 
 
 # Contribute
