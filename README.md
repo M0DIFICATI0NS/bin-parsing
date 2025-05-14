@@ -25,13 +25,12 @@ To obtain a local copy of the repository and set it up, please follow these step
      pip install beautifulsoup4
 
      ```
-  4. Ensure the local path for both exporting and analyzing:
+  3. Ensure the local path for both exporting and analyzing:
      
-     https://github.com/M0DIFICATI0NS/log-analyzer/blob/b9de0dba754ab694f68c1ba592da235d10dd2249/ExportMessageLog.cs#L21
-     https://github.com/M0DIFICATI0NS/log-analyzer/blob/b9de0dba754ab694f68c1ba592da235d10dd2249/AnalyzeMessageLog.cs#L14
-     https://github.com/M0DIFICATI0NS/log-analyzer/blob/b9de0dba754ab694f68c1ba592da235d10dd2249/AnalyzeMessageLog.cs#L75
-     
-  3. Run the Project:
+     https://github.com/M0DIFICATI0NS/bin-parsing/blob/cb6a3024f1abafd69fd57ea92098f602706d7319/parse_bin_info.py#L130
+     https://github.com/M0DIFICATI0NS/bin-parsing/blob/cb6a3024f1abafd69fd57ea92098f602706d7319/parse_bin_info.py#L199
+
+  5. Run the Project:
      ```
      python parse_bin_info.py run
      ```
