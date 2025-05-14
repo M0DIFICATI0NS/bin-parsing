@@ -10,12 +10,20 @@
 To obtain a local copy of the repository and set it up, please follow these steps:
 
 ### Software Dependencies
-* Install Python 3.13.3
+* Install Python 3.8+
 * Install PostgreSQL
+
+### Prepare the PostgreSQL Database
+* Open your PostgreSQL tool (e.g. pgAdmin 4 or psql CLI) to restore the included backup file (company_db.sql) from the project repository.
+  1. In pgAdmin, right-click the Databases section and select **Create > Database**.
+  2. Give 'company_db' name for a new databse and click **Save**.
+  3. Right-click your new database > **Restore..** and choose the .sql file from this repo.
+ 
+* Using **psql** from the command-line is faster
+  psql -U your_username -d your_database -f path/to/your_backup.sql
 
 ### Generate your own API Key
 * Open https://data.egov.kz/profile/apikeylist
-  
   1. Click on generate API Key.
   2. Agree the conditions and sign it with your digital signature via NCALayer.
   3. Enter the reason why you're going to use it.
@@ -31,22 +39,18 @@ To obtain a local copy of the repository and set it up, please follow these step
      ```
   2. Install dependencies:
      ```
-     pip install psycopg2
-     pip install beautifulsoup4
-     pip install requests
-     pip install pandas
+     pip install -r requirements.txt
      ```
-  3. Ensure the local path for both exporting and analyzing, API Key field and database connection info:
+  3. Ensure the local path for both exporting and analyzing, API Key field and update database credentials:
      
      https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L17
      https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L130
      https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L199
      https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L119
-     https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L204
 
   5. Run the Project:
      ```
-     python parse_bin_info.py run
+     python parse_bin_info.py
      ```
 
 # Overview
