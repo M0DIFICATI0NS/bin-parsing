@@ -25,6 +25,7 @@ To obtain a local copy of the repository and set it up, please follow these step
   ```
 ### Generate your own API Key
 * Open https://data.egov.kz/profile/apikeylist
+  
   1. Click on generate API Key.
   2. Agree the conditions and sign it with your digital signature via NCALayer.
   3. Enter the reason why you're going to use it.
@@ -59,7 +60,7 @@ bins.xlsx - organization's business idendification numbers entered by **you**;
 organizations_report.xlsx - script's report based on **bins.xlsx**
 
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/fb524349-ba35-4b57-a628-bc2ca1911f6a">
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/841e7723-fac5-4e89-8993-6df407cfa481">
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/841e7723-fac5-4e89-8993-6df407cfa481">
 
 # Contribute
 Any contributions you make are **greatly appreciated**.
