@@ -16,7 +16,7 @@ To obtain a local copy of the repository and set it up, please follow these step
 ### Prepare the PostgreSQL Database
 * Open your PostgreSQL tool (e.g. pgAdmin 4 or psql CLI) to restore the included backup file (company_db.sql) from the project repository.
   1. In pgAdmin, right-click the Databases section and select **Create > Database**.
-  2. Give 'company_db' name for a new databse and click **Save**.
+  2. Give 'company_db' name for a new database and click **Save**.
   3. Right-click your new database > **Restore..** and choose the .sql file from this repo.
  
 * Using **psql** from the command-line is faster
