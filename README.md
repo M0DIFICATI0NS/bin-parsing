@@ -20,8 +20,9 @@ To obtain a local copy of the repository and set it up, please follow these step
   3. Right-click your new database > **Restore..** and choose the .sql file from this repo.
  
 * Using **psql** from the command-line is faster
+  ```
   psql -U your_username -d your_database -f path/to/company_db.sql
-
+  ```
 ### Generate your own API Key
 * Open https://data.egov.kz/profile/apikeylist
   1. Click on generate API Key.
