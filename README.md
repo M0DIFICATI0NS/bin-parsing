@@ -66,6 +66,4 @@ organizations_report.xlsx - script's report based on **bins.xlsx**
 Any contributions you make are **greatly appreciated**.
 
 # Contact
-Sultan Mecheyev - s.mecheyev@kmg.kz (deactivated)
-
 [LinkedIn](www.linkedin.com/in/sultan-mecheyev-3b459a328)
