@@ -13,8 +13,9 @@ To obtain a local copy of the repository and set it up, please follow these step
 * Install Python 3.13.3
 * Install PostgreSQL
 
-### Generate your own API Key:
+### Generate your own API Key
 * Open https://data.egov.kz/profile/apikeylist
+  
   1. Click on generate API Key.
   2. Agree the conditions and sign it with your digital signature via NCALayer.
   3. Enter the reason why you're going to use it.
@@ -36,13 +37,13 @@ To obtain a local copy of the repository and set it up, please follow these step
      pip install pandas
      ```
   3. Ensure the local path for both exporting and analyzing, API Key field and database connection info:
- 
+     ```
      https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L17
      https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L130
      https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L199
      https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L119
      https://github.com/M0DIFICATI0NS/bin-parsing/blob/6ff1ed943f5f69eeb47b0ad8f12d5350950d4f75/parse_bin_info.py#L204
-
+     ```
   5. Run the Project:
      ```
      python parse_bin_info.py run
