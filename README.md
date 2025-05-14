@@ -57,6 +57,8 @@ To obtain a local copy of the repository and set it up, please follow these step
 bins.xlsx - organization's business idendification numbers entered by **you**;
 organizations_report.xlsx - script's report based on **bins.xlsx**
 
+![input](https://github.com/user-attachments/assets/fb524349-ba35-4b57-a628-bc2ca1911f6a)
+![output](https://github.com/user-attachments/assets/841e7723-fac5-4e89-8993-6df407cfa481)
 
 # Contribute
 Any contributions you make are **greatly appreciated**.
