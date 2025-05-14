@@ -14,7 +14,7 @@ import logging
 # )
 
 # API configuration
-API_KEY = 'a654d090f48b46f39d7203423e91b476'
+API_KEY = {yourApiKey}
 API_URL = 'https://data.egov.kz/api/v4/gbd_ul/v1'
 
 
@@ -119,15 +119,15 @@ def main():
         # connection to psql db
         conn = psycopg2.connect(
             dbname="company_db",
-            user="postgres",
-            password="sultan",
+            user={yourUserName},
+            password={yourPassword},
             host="localhost",
             port="5432"
         )
         cur = conn.cursor()
 
         # BIN input Path
-        df_bins = pd.read_excel(r"C:\Users\User\Documents\bin-parsing\bins.xlsx", dtype={'BIN': str})
+        df_bins = pd.read_excel(r"{yourPath}", dtype={'BIN': str})
         for bin in df_bins['BIN']:
             # 12-digit BIN establishment
             bin_str = bin.zfill(12)
@@ -196,7 +196,7 @@ def main():
 
         # BIN output Path
         df_out = pd.read_sql("SELECT * FROM organizations", conn)
-        df_out.to_excel(r"C:\Users\User\Documents\bin-parsing\organizations_report.xlsx", index=False)
+        df_out.to_excel(r"{yourPath}", index=False)
 
     except Exception as e:
         logging.error(f"An error occurred: {e}", exc_info=True)
@@ -204,8 +204,8 @@ def main():
         try:
             with psycopg2.connect(
                 dbname="company_db",
-                user="postgres",
-                password="sultan",
+                user={yourUserName},
+                password={yourPassword},
                 host="localhost",
                 port="5432"
             ) as conn:
